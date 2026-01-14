@@ -7,18 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-
 // Configure OpenAI
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY, // store in environment variables
 });
-
-
-
-
-
-
 
 
 // Optional: quick test route
