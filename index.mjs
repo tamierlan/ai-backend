@@ -7,11 +7,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
 // Configure OpenAI
 const openai = new OpenAI({
-  // apiKey: process.env.OPENAI_API_KEY, // store in environment variables
-  apiKey: "REMOVEDaK2SXyjS8731tZzSTkFd3O5eZT6FjhB12UuFlU6iIdATFOa0Oa9uBz3sGANroawyOImHL2ntxTT3BlbkFJDxsTAeW5DHqgA3YxyMRgNLIr9gWEypvtY91y-tB2Zckm1GxvWRNEay6OuHmgMP7NF95acWNmkA"
+  apiKey: process.env.OPENAI_API_KEY, // store in environment variables
 });
+
+
+
+
+
+
+
 
 // Optional: quick test route
 app.get("/profile", (req, res) => {
